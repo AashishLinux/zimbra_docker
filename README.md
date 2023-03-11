@@ -18,7 +18,7 @@ mkdir /opt/zimbra
 
 # FOR DOCKER COMPOSE RUN
 
-*Then clone this repository
+*Then clone this repository*
 
 git clone https://github.com/AashishLinux/zimbra_docker.git
 
