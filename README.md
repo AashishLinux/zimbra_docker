@@ -16,13 +16,15 @@ chmod +x /usr/local/bin/docker-compose
 
 mkdir /opt/zimbra
 
-**Then clone this repository**
+# FOR DOCKER COMPOSE RUN
+
+*Then clone this repository
 
 git clone https://github.com/AashishLinux/zimbra_docker.git
 
 cd zimbra_docker
 
-# FOR DOCKER COMPOSE RUN
+
 
 docker-compose up -d
 
