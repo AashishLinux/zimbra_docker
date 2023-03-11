@@ -34,9 +34,14 @@ git clone https://github.com/AashishLinux/zimbra_docker.git
 
 cd zimbra_docker
 
+*Build the image
+
 $ docker build -t zimbra_aashish:v01 .    ## You can build the entire image or download the prebuild image from my docker hub by using "docker pull aashish9899/zimbra:latest"
 
+*Run the docker container
+
 docker run -dit --name zimbra.mail.aashishlinux.tk -h mail.aashishlinux.tk -v /opt/zimbra:/opt/zimbra -p 25:25 -p 80:80 -p 443:443 -p 110:110 -p 143:143 -p 465:465 -p 587:587 -p 993:993 -p 995:995 -p 7071:7071 -p 8443:8443 -p 9071:9071 zimbra_aashish:v01
+
 # Now you can exec into the container with
 
 $ docker exec -it zimbra.mail.aashishlinux.tk
